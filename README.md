@@ -24,7 +24,7 @@ Project is created with:
 To setup this project, create a local folder location for the repository and install it locally using npm:
 
 ```
-$ cd ../FileExplorer
+$ cd FileExplorer
 $ npm install file-explorer-sk
 ```
 
