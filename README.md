@@ -25,7 +25,7 @@ To setup this project, create a local folder location for the repository and ins
 
 ```
 $ cd FileExplorer
-$ npm install file-explorer-sk
+$ npm install 
 ```
 
 ## Usage
