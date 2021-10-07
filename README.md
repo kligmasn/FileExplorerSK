@@ -35,5 +35,3 @@ For example:
 ```
 $ node file-explorer.js './testfolder/' 'D:\Documents\Spring2019'
 ```
-
-$ 
