@@ -1,0 +1,17 @@
+{
+  "name": "file-explorer-sk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "file-explorer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steven Kligman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ws": "^5.0.2",
+    "fdir": "^5.1.0"
+  },
+  "devDependencies": {}
+}

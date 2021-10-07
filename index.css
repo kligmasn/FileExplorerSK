@@ -1,0 +1,22 @@
+button { 
+    color: blueviolet 
+}
+
+div {
+    position: relative;
+    margin-left: 15px;
+    font-family: 'Consolas'
+}
+
+.file {
+    font-size: 12px;
+}
+
+.file:hover {
+    cursor: pointer;
+    background-color: rgb(20, 20, 20, 0.2);
+}
+
+.directory {
+    font-size: 14px;
+}
