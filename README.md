@@ -32,9 +32,11 @@ $ npm install
 ```
 
 ## Usage
-To use this project, run the program with node and pass directory paths as additional arguments
+To use this project, run the program with node and pass directory paths as additional arguments.
 
 For example:
 ```
 $ node file-explorer.js ./testfolder/ D:\Documents\Spring2019
 ```
+
+Aftering running the command, navigate to http://localhost:3000 on a web browser to display the file explorer.
