@@ -10,6 +10,8 @@
 
 ## General info
 This project is a file explorer displayed in a tree view format. Directory paths are given as program arguments and their contents are displayed locally in a web browser.
+
+This project was built using vanilla Javascript. A front-end framework might need to be considered for future updates or if theres need to increase the scope of the project. A framework could ease further development and allow more efficient enhancements to the user experience. 
 	
 ## Technologies
 Project is created with:
@@ -24,8 +26,9 @@ Project is created with:
 To setup this project, create a local folder location for the repository and install it locally using npm:
 
 ```
+$ git clone https://github.com/kligmasn/FileExplorerSK.git
 $ cd ../FileExplorer
-$ npm install file-explorer-sk
+$ npm install 
 ```
 
 ## Usage
@@ -33,7 +36,5 @@ To use this project, run the program with node and pass directory paths as addit
 
 For example:
 ```
-$ node file-explorer.js './testfolder/' 'D:\Documents\Spring2019'
+$ node file-explorer.js ./testfolder/ D:\Documents\Spring2019
 ```
-
-$ 

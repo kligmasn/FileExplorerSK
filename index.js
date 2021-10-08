@@ -1,16 +1,13 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     const socketProtocol = (window.location.protocol === 'https:' ? 'wss:' : 'ws:')
-    const echoSocketUrl = socketProtocol + '//' + window.location.hostname + ':3000/watch'
-    const socket = new WebSocket(echoSocketUrl);
+    const socketUrl = socketProtocol + '//' + window.location.hostname + ':3000/watch' //Web socket listens on server port 3000 on '/watch' path
+    const socket = new WebSocket(socketUrl);
 
     socket.onmessage = (msg) => {
         if (msg.data == "reload") {
-            location.reload();
+            location.reload(); //Reload the browser window to get html updates from server
         }
-        console.log("socket connected");
-        console.log(msg);
     }
-
 
     var btns = document.getElementsByTagName('button');
     for(var x = 0; btns.length; x++) {
@@ -28,13 +25,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         })
     }
 
-
+    //Get all elements with the same parent of the element passed in (excluding the element itself) 
     function getAllSiblings(element, parent) {
         const children = [...parent.children];
         return children.filter(child => child !== element);
     }
-
-    
-})
+});
 
 

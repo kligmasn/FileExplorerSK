@@ -1,5 +1,19 @@
 button { 
-    color: blueviolet 
+    color: blueviolet;
+    font-family: 'Consolas';
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    padding-left: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(20, 20, 20, 0.2);
+}
+
+button:focus {
+    background-color: rgba(0, 91, 228, 0.57);
 }
 
 div {
@@ -15,6 +29,10 @@ div {
 .file:hover {
     cursor: pointer;
     background-color: rgb(20, 20, 20, 0.2);
+}
+
+.file:focus {
+    background-color: rgba(0, 91, 228, 0.57);
 }
 
 .directory {

@@ -10,19 +10,23 @@ const port = 3000;
 
 const args = process.argv.slice(2);
 
-//Check if any path arguments are invalid 
+if (args.length == 0) {
+    console.log("No paths entered.")
+    return;
+}
+
 for (let x = 0; x < args.length; x++) {
     //Converts linux home directory symbol to platform agnostic
     if (args[x].includes('~')) { 
         args[x] = args[x].replace('~', os.homedir());
     }
 
+    //Check if any path arguments don't exist 
     if (!fs.existsSync(args[x])) {
         console.log(args[x] + " path entered doesn't exist.")
         return;
     }
 }
-
 
 app.use(express.static(path.join(__dirname, '//')))
 
@@ -85,7 +89,7 @@ function main(args) {
                         }
                         else if (startIndex != 1) { //End the directory
                             html += '</div>'
-                            return x;
+                            return x - 1; //Return item index - 1 because for loop will increment variable after returned
                         }
                     }
             
