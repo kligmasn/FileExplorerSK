@@ -27,7 +27,7 @@ To setup this project, create a local folder location for the repository and ins
 
 ```
 $ git clone https://github.com/kligmasn/FileExplorerSK.git
-$ cd ./FileExplorer
+$ cd ./FileExplorerSK
 $ npm install 
 ```
 
