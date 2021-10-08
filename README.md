@@ -39,4 +39,4 @@ For example:
 $ node file-explorer.js ./testfolder/ D:\Documents\Spring2019
 ```
 
-Aftering running the command, navigate to http://localhost:3000 on a web browser to display the file explorer.
+After running the command, navigate to http://localhost:3000 on a web browser to display the file explorer.
